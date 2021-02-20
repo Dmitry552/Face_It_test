@@ -1,0 +1,10 @@
+﻿@import './reset.scss';
+@import './WeatherContainer.scss';
+
+html, body, #root {
+  font: 0.9rem sans-serif;
+  background: #0a1f44;
+  color: #000000;
+  height: 100%;
+  margin: 0;
+} 

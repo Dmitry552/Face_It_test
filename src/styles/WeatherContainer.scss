@@ -1,0 +1,89 @@
+﻿.main {
+  height: 100%;
+  .main-container {
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.418) ), url('https://lh3.googleusercontent.com/proxy/fpypeDRnCI_ouxVkPwtTXIwyN0J60Xgcf5xvF5dkqzbmQ1zxdTuaUjmlibhs8Fw3MaWaZrYd-emBBZhdzUn50nzOvl5DQNkcPSS018TpNGLogA');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .search {
+      margin-bottom: 2%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &__input {
+      outline: none; 
+      padding: 20px 7%;
+      border-radius: 20px;
+      border: none;
+      background: rgba(250, 250, 250, 0.85);
+      }
+      &__button {
+      margin-top: 10px;
+      padding: 9px 30%;
+      border-radius: 20px;
+      border: none;
+      background: rgb(250, 250, 250);
+      }
+    }
+    .city {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 40px 8%;
+      border-radius: 20px;
+      background: rgba(250, 250, 250, 0.85);
+      box-shadow: 10px 10px 5px 0px rgba(15, 15, 15, 0.404);
+      sup {
+        font-size: 0.5em;
+      }
+      &__name {
+        font-size: 2em;
+      }
+      &__temp {
+        font-size: 5rem;
+        font-weight: bold;
+        margin-top: 10px;
+        color: #1e2432;
+        text-align: center;
+      }
+      &__humidity {
+        font-size: 1.2em;
+      }
+      .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .city-icon {
+          margin-top: 10px;
+          width: 100px;
+          height: 100px;
+        }
+        p {
+          margin-top: 10px;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .search {
+      padding: 20px 15%;
+  }
+
+  .city {
+      padding: 40px 20%;
+  }
+}
